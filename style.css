@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+
+}
+
+body{
+    background-color: black;
+    
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* estilo de cabecario */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(95, 94, 94);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* estilo do topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 90px;
+}
+.topo-do-site h1 span{
+    color: blue;
+}
+
+.topo-do-site p{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.topo-do-site img{
+    max-width: 300px; /* Ou qualquer valor desejado */
+    height: auto;
+    border-radius: 20px;
+}
+
+.img-topo-do-site{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.meus-trabalhos h2{
+    padding: 40px 4%;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.meus-trabalhos img{
+    align-items: center;
+    padding: 30px 4%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Isso mantém a proporção da imagem e corta o excesso para ajustar as dimensões especificadas */
+    border-radius: 50px; /* Adicione um raio de borda se desejar */
+    margin: 20px; /* Adicione margem entre as imagens, se desejar */
+}
+
+/* Adicione estilos específicos para a seção "Meus Trabalhos" */
+.meus-trabalhos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Adicione estilos específicos para cada imagem */
+.meus-trabalhos img{
+    width: 30%; /* Define a largura das imagens para ocupar 30% da largura do contêiner */
+    margin: 5px; /* Adiciona espaçamento entre as imagens */
+    transition: opacity 0.5s ease; /* Efeito de transição ao passar o mouse */
+}
+
+/* Adicione efeitos de transição ao passar o mouse (exemplo: diminuir a opacidade) */
+.meus-trabalhos img:hover{
+    opacity: 0.8;
+    justify-items: center;
+}
+
+
+/* Adicione um estilo para o efeito de zoom */
+.zoom-in {
+    transform: scale(1.5); /* Ajuste o valor conforme necessário para controlar o zoom */
+    transition: transform 5s ease; /* Adicione uma transição de 5 segundos para o zoom */
+}
+
+.contato h3{
+    padding: 40px 4%;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-botão {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-botão a {
+    text-decoration: none;
+}
+
+.btn-botão button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-botão button:hover {
+    background-color: darkblue;
+}
+
+/* Adicione margens ou espaçamento conforme necessário */
+.btn-botão a + a {
+    margin-left: 20px;
+}
+
+.btn-botão {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-botão a {
+    text-decoration: none;
+}
+
+.btn-botão button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-botão button:hover {
+    background-color: darkblue;
+}
+
+.btn-botão a + a {
+    margin-left: 20px;
+}
+
+.btn-botão i {
+    font-size: 24px;
+    margin-right: 8px; /* Ajuste conforme necessário para o espaçamento entre o ícone e o texto */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+    margin-top: 100px; /* Ajuste para compensar o espaço ocupado pelo cabeçalho fixo */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+header a {
+    color: rgb(95, 94, 94);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Adicione um pouco de espaço para o conteúdo abaixo do cabeçalho fixo */
+main {
+    margin-top: 70px;
+}
+
+/* Adicione a cor de fundo do cabeçalho fixo */
+header.scrolled {
+    background-color: #000; /* Adicione a cor desejada quando o cabeçalho estiver rolando */
+}
+
+
+@media screen and (max-width: 1000px) {
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    .btn-botão {
+        text-align: center;
+    }
+
+    /* Adicione a regra para exibir o menu e o botão de contato quando necessário */
+    .menu-mobile {
+        display: block;
+    }
+
+    
+}
